@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Bytes - Connect with Us!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            /* Use Roboto as the primary font */
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            /* Slightly wider container */
+            width: 90%;
+            margin: 20px;
+        }
+
+        /* Company Name & Logo Styles */
+        .company-header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo-img {
+            max-width: 100px;
+            /* Adjust size to your logo's aspect ratio */
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            /* Optional: for a softer look */
+        }
+
+        .company-name {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #007bff;
+            /* A clean, tech-friendly blue color */
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1em;
+            color: #555;
+            font-weight: 400;
+        }
+
+        /* Main Heading (CTA) */
+        h1 {
+            color: #128C7E;
+            margin-bottom: 30px;
+            font-size: 1.6em;
+            /* Reduced size to accommodate the company name */
+            font-weight: 700;
+        }
+
+        /* WhatsApp Button Style */
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background-color: #25D366;
+            /* WhatsApp Green */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 40px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+            width: 80%;
+            max-width: 350px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        .whatsapp-button i {
+            margin-right: 10px;
+            font-size: 1.4em;
+        }
+
+        /* Social Media Icons Style */
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            font-size: 2.2em;
+            color: #555;
+            transition: color 0.3s ease, transform 0.2s ease;
+            padding: 5px;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Custom Colors for Icons */
+        .fa-whatsapp {
+            color: #25D366;
+        }
+
+        .fa-facebook-square {
+            color: #1877F2;
+        }
+
+        .fa-linkedin {
+            color: #0A66C2;
+        }
+
+        .fa-tiktok {
+            color: #000000;
+        }
+
+        .fa-instagram {
+            /* Instagram Gradient effect */
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fa-square-whatsapp {
+            color: #25D366;
+        }
+
+        /* --- RESPONSIVENESS (Media Query for small screens) --- */
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px 15px;
+                margin: 10px;
+            }
+
+            .company-name {
+                font-size: 1.8em;
+            }
+
+            .logo-img {
+                max-width: 80px;
+            }
+
+            h1 {
+                font-size: 1.4em;
+            }
+
+            .whatsapp-button {
+                width: 95%;
+                /* Even wider for easy tapping */
+                padding: 12px 20px;
+                font-size: 1em;
+            }
+
+            .social-icons a {
+                font-size: 1.8em;
+                /* Slightly smaller icons on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="company-header">
+            <img src="./BetaBytes.png" alt="Beta Bytes Logo" class="logo-img">
+
+            <p class="company-name">BetaBytes</p>
+            <p class="tagline">Innovative IT Solutions</p>
+        </div>
+
+        <h1>Connect with us instantly!</h1>
+
+        <a href="https://wa.me/+923199585740?text=I%20need%20more%20info%20about%20BetaBytes.I%20saw%20your%20website%20and%20would%20like%20to%20know%20more."
+            class="whatsapp-button" target="_blank">
+            <i class="fab fa-whatsapp"></i> Chat with Beta Bytes
+        </a>
+
+        <p>Find us on other platforms:</p>
+        <div class="social-icons">
+
+            <a href="https://www.facebook.com/share/17Xyt7SeD2/" target="_blank" title="Beta Bytes on Facebook">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/company/betaabytes/" target="_blank" title="Beta Bytes on LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com/betabytes_?igsh=MW85aGI5azNjcWdkaw==" target="_blank"
+                title="Beta Bytes on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@betabytes_?_r=1&_t=ZS-913NInf7sfA" target="_blank" title="Beta Bytes on TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a href="https://whatsapp.com/channel/0029VbBMtZo9Gv7So15Qyl3F" target="_blank" title="Beta Bytes WhatsApp Channel">
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
